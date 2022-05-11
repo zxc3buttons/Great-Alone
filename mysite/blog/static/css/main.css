@@ -27,11 +27,13 @@ body{
 nav{
     margin: auto;
     width: 800px;
-    height: 100px;
+    height: 45px;
 }
 .topnav{
     font-size: 14px;
     margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
 .topnav a{
     color: #000;
@@ -47,10 +49,11 @@ nav{
     display: none;
 }
 .tokyo {
-    display: flex;
+    margin-top: 20px;
+    display: inline-block;
     justify-content: center;
     max-width: 100%;
-    margin-top: -50px;
+    z-index: 5;
 }
 .advantages_container {
     display: flex;
@@ -72,6 +75,12 @@ nav{
     .topnav a:not(:first-child) {
         display: none;
     }
+    .tokyo {
+        margin-top: 20px;
+        display: inline-block;
+        justify-content: center;
+        max-width: 100%;
+    }
     .topnav a.icon{
         float: right;
         margin-top: -17px;
@@ -80,7 +89,8 @@ nav{
     }
     nav{
         width: 100%;
-        height: 50px;
+        height: 30px;
+        display: inline;
     }
     .topnav.responsive a.icon{
         position: absolute;
@@ -92,7 +102,19 @@ nav{
         display: block;
         text-align: left;
     }
-    .advantages_item { 
+    .topnav.responsive {
+        display: block;
+    }
+    .advantages_item {
         width: 45%;
+        display: block;
+        padding: 10px 10px 50px 75px;
+        text-align: center;
+    }
+    .advantages_item img{
+        margin-left: -30px;
+    }
+    .advantages {
+        display: block;
     }
 }

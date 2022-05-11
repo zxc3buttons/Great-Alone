@@ -1,15 +1,16 @@
 {% load static %}
 
 <!--DOCTYPE html-->
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great Alone</title>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?{% now 'U' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="shortcut icon" href="{% static 'img/icon.png' %}" type="image/png">
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </head>
 <body>
     <header>
@@ -36,24 +37,24 @@
             <div class="advantages_container">
                 <div class="advantages">
                     <div class="advantages_item">
-                        <img src="{% static 'img/1(new).png' %}" alt="">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tempora eos possimus iste culpa reiciendis?</p>
+                        <img src="{% static 'img/1(new).png' %}" alt=""  width="190" height="199">
+                        <h2>Про Солнце</h2>
+                        <p>Солнце не знает правых. Солнце не знает неправых. Солнце светит без цели кого-то согреть. Нашедший себя подобен солнцу.</p>
                     </div>
                     <div class="advantages_item">
                         <img src="{% static 'img/2(new).png' %}" alt="">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tempora eos possimus iste culpa reiciendis?</p>
+                        <h2>Про проблему</h2>
+                        <p>Если проблему можно решить, то не стоит о ней беспокоиться; если ее решить нельзя, то беспокоиться о ней бесполезно.</p>
                     </div>
                     <div class="advantages_item">
                         <img src="{% static 'img/3(new).png' %}" alt="">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tempora eos possimus iste culpa reiciendis?</p>
+                        <h2>Про слезы</h2>
+                        <p>Муж с женой должны быть подобны руке и глазам: когда руке больно — глаза плачут, а когда глаза плачут — руки вытирают слезы.</p>
                     </div>
                 </div>
             </div>
     </main>
 
-    <script src="{% static 'js/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
