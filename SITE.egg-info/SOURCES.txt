@@ -1,0 +1,7 @@
+MANIFEST.in
+requirements.txt
+setup.py
+SITE.egg-info/PKG-INFO
+SITE.egg-info/SOURCES.txt
+SITE.egg-info/dependency_links.txt
+SITE.egg-info/top_level.txt
