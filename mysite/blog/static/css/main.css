@@ -71,6 +71,11 @@ nav{
 .advantages_item {
     width: 30%;
 }
+.advantages_item p{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 80px;
+}
 .wrapper {
     min-height: 100%;
     background-color: black;
@@ -97,6 +102,7 @@ nav{
 }
 .page_section_services {
     background-color: #b82824;
+    height: 525px;
 }
 .page_text {
     font-size: 16px;
@@ -172,10 +178,19 @@ footer nav a:hover {
         padding: 10px 10px 50px 75px;
         text-align: center;
     }
+    .advantages_item p{
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
     .advantages_item img{
         margin-left: -30px;
     }
     .advantages {
         display: block;
     }
+    .page_section_services {
+    background-color: #b82824;
+    height: 1370px;
+}
 }
