@@ -27,7 +27,7 @@ body{
 nav{
     margin: auto;
     width: 800px;
-    height: 45px;
+    height: 35px;
 }
 .topnav{
     font-size: 14px;
@@ -42,8 +42,8 @@ nav{
     font-size: 15px;
 }
 .topnav a:hover{
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-top: 2px solid #b82824;
+    border-bottom: 2px solid #b82824;
 }
 .topnav .icon{
     display: none;
@@ -75,6 +75,67 @@ nav{
     text-align: left;
     margin-top: 10px;
     margin-left: 80px;
+}
+.wrapper {
+    min-height: 100%;
+    background-color: black;
+}
+.page {
+    padding: 20px 0px 0px 0px;
+}
+.page_section {
+    padding: 30px;
+    max-weight: 1200px;
+    margin: 0px auto;
+}
+.page_section_projects {
+    background-color: #b82824;
+}
+.page_section_blog {
+    background-color: white;
+}
+.page_section_contact {
+    background-color: #b82824;
+}
+.page_section_about {
+    background-color: white;
+}
+.page_section_services {
+    background-color: #b82824;
+}
+.page_text {
+    font-size: 16px;
+    line-height: 150%;
+}
+.page_text p {
+    margin: 0px 0px 20px 0px;
+}
+.page_title {
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: black;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+footer a {
+    color: #b82824;
+    font-size 14px;
+    margin-left: 10px;
+}
+footer nav a:hover {
+    border-bottom: 1px solid #b82824;
+}
+.social img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
 }
 @media screen and (max-width: 768px){
     .topnav a:not(:first-child) {
