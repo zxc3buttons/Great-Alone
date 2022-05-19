@@ -1,0 +1,4 @@
+make: Entering directory 'c:/workspace/Great-Alone'
+sphinx-build -M help "source" "build"  
+make: Leaving directory 'c:/workspace/Great-Alone'
+ 
