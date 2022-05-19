@@ -46,9 +46,3 @@ class Pars:
         self.text_1 = my_hokku[0]
         self.text_2 = my_hokku[1]
         self.text_3 = my_hokku[2]
-
-
-# obb = Pars()
-# obb.make_good()
-# print(obb.text_1, obb.text_2, obb.text_3)
-# print(obb.title_1, obb.title_2, obb.title_3)
