@@ -104,9 +104,18 @@ nav{
 .page_section_contact {
     background-color: #b82824;
 }
+.page_section_contact p{
+    margin: 0px 0px 0px 0px;
+    font-size: 22px;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
 .page_section_about {
+    margin-top: 20px;
     background-color: white;
 }
+
 .page_section_services {
     background-color: #b82824;
     height: auto;
@@ -169,6 +178,44 @@ footer nav a:hover {
 .mapp {
     margin-top: 20px;
 }
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Han Zi', sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Han Zi', sans-serif;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #b82824;
+    border: 2px groove black;
+    border-radius: 4px;
+    font-family: 'Han Zi', sans-serif;
+}
+
+/* Add a background color and some padding around the form */
+.container_lox {
+    border-radius: 5px;
+    background-color: #b82824;
+    padding: 20px;
+    font-family: 'Han Zi', sans-serif;
+}
 @media screen and (max-width: 768px){
     .topnav a:not(:first-child) {
         display: none;
@@ -222,6 +269,5 @@ footer nav a:hover {
     }
     .page_section_services {
     background-color: #b82824;
-    height: 1370px;
 }
 }
