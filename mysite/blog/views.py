@@ -4,9 +4,15 @@ from .models import MyHokku
 from .models import Tokio_authors
 from django.utils import timezone
 from .models import Project
+from .forms import ResponseForm
 
 
 def main(request):
+    form = ResponseForm()
+    if request.method == 'POST':
+        form = ResponseForm(request.POST)
+        if form.is_valid():
+            form.save()
     this_hokkus = MyHokku.objects.all()
     this_names = Tokio_authors.objects.all()
     three_names = [random.randint(0, 201) for i in range(3)]
@@ -20,7 +26,7 @@ def main(request):
     projects = Project.objects.all()
     # projects = Project.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     context_dict = {'tit_1': tit_1, 'tit_2': tit_2, 'tit_3': tit_3, 'tex_1': tex_1,
-                    'tex_2': tex_2, 'tex_3': tex_3, 'projects': projects}
+                    'tex_2': tex_2, 'tex_3': tex_3, 'projects': projects, 'form': form }
     return render(request, 'blog/main.html', context_dict)
 
 def location(request):

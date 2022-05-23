@@ -58,3 +58,14 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
+
+class NewResponse(models.Model):
+    firstname = models.CharField(max_length=200)
+    lastname = models.CharField(max_length=200)
+    subject = models.TextField()
+
+    def publish(self):
+        self.save()
+
+    def __str__(self):
+        return f'{self.firstname} {self.lastname}'
