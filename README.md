@@ -65,8 +65,11 @@ urllib3==1.26.9
 setuptools~=57.0.0
 beautifulsoup4~=4.11.1
 ```
-<img src="https://easyjava.ru/wp-content/uploads/2017/10/spring-boot-logo.jpg">
-<img src="https://developer.asustor.com/uploadIcons/0020_999_1617260177_postgresql-icon_256.png">
+<br>
+<a href="https://github.com/worldbeater/dta">
+  <img src="./webapp/static/logo.svg">
+</a>
+<br>
 <br><br>
 К главным зависимостям, использующимся в проекте можно отнести Spring Boot для Java, упрощающий разработку веб-приложений. Также сюда можно отнести Lombok для расшире
 ния функциональности языка Java. Thymeleaf - шаблонизатор, позволяющий связывать HTML5 и XML с веб-приложением уровня Spring MVC. В проекте также используется система управления базами данных PostgreSQL.
